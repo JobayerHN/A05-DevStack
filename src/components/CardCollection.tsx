@@ -1,5 +1,7 @@
 import { use } from "react";
 import type { Itechnology } from "../types/types";
+import AllTechs from "./sub-components/AllTechs";
+import SelectedStack from "./sub-components/selectedStack";
 
 interface ICardCollectionProps {
 	technologyPromise: Promise<Itechnology[]>;
@@ -10,27 +12,14 @@ const CardCollection = ({ technologyPromise }: ICardCollectionProps) => {
 
 	return (
 		<div>
-			{technology.map((tech) => (
-				<div>
-					<div className="container m-auto card bg-base-100 w-96 shadow-sm">
-						<figure>
-							<img
-								src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-								alt="Shoes"
-							/>
-						</figure>
-						<div className="card-body">
-							<h2 className="card-title">{tech.name}</h2>
-							<p>{tech.description}</p>
-							<div className="card-actions justify-end">
-								<button className="btn btn-primary">
-									Add to Stock
-								</button>
-							</div>
-						</div>
-					</div>
+			<div className="container m-auto flex justify-between items-start gap-8">
+				<div className="grid grid-cols-3 gap-5">
+					{technology.map((tech) => (
+						<AllTechs tech={tech}></AllTechs>
+					))}
 				</div>
-			))}
+				<SelectedStack></SelectedStack>
+			</div>
 		</div>
 	);
 };

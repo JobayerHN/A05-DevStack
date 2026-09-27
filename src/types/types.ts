@@ -1,10 +1,12 @@
 export interface Itechnology {
-	id: 1;
-	name: "React";
-	category: "Frontend";
-	description: "A JavaScript library for building interactive and component-based user interfaces.";
-	icon: "https://cdn.simpleicons.org/react/61DAFB";
-	rating: 4.8;
-	difficulty: "Intermediate";
-	badge: "Popular";
+	id: number;
+	name: string;
+	category: string;
+	description: string;
+	icon: string;
+	rating: number;
+	difficulty: string;
+	badge: string;
+	badgeBg: string;
+	badgeText: string;
 }
