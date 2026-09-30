@@ -3,7 +3,7 @@
 const Explore = () => {
 	return (
 		<div>
-			<div className="container m-auto">
+			<div className="container m-auto pb-10">
 				<div>
 					<h2 className="inter font-extrabold leading-10 text-3xl pb-2">
 						Explore the{" "}

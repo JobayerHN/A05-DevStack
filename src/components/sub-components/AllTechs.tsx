@@ -4,12 +4,16 @@ import type { Itechnology } from "../../types/types";
 
 interface AllTechProps {
 	tech: Itechnology;
+	onAddToStack: (tech: Itechnology) => void;
+	isSelected: boolean;
 }
 
-const AllTechs = ({ tech }: AllTechProps) => {
+const AllTechs = ({ tech, onAddToStack, isSelected }: AllTechProps) => {
 	return (
 		<div className="container">
-			<div className="rounded-2xl border border-slate-100/80 bg-white p-6 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow">
+			<div
+				className={`rounded-2xl border border-slate-100 ${isSelected && "shadow-pink-400"} bg-white p-6 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow`}
+			>
 				<div className="pb-3.5">
 					<figure className="flex justify-between items-start pb-3">
 						<img
@@ -44,8 +48,12 @@ const AllTechs = ({ tech }: AllTechProps) => {
 						</div>
 					</div>
 					<div>
-						<button className="btn btn-neutral w-full font-pqs font-medium leading-4 text-xs">
-							Add to Stack
+						<button
+							onClick={() => onAddToStack(tech)}
+							className={`btn ${isSelected ? "disabled:text-[#0A0F1D] " : "btn-neutral"} w-full font-pqs font-medium leading-4 text-xs`}
+							disabled={isSelected}
+						>
+							{isSelected ? "Selected" : "Add to Stack"}
 						</button>
 					</div>
 				</div>

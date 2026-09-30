@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import type { Itechnology } from "./types/types";
 import CardCollection from "./components/CardCollection";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const technologyPromise = async (): Promise<Itechnology[]> => {
 	const res = await fetch("/public/data.json");
@@ -16,6 +18,7 @@ function App() {
 	return (
 		<>
 			<div>
+				<ToastContainer></ToastContainer>
 				<Nav></Nav>
 				<Banner></Banner>
 				<Explore></Explore>
