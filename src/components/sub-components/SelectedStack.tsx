@@ -20,7 +20,7 @@ const SelectedStack = ({
 						<p className="mt-1 text-sm text-slate-400">
 							No technologies selected yet.
 						</p>
-						<div className="mt-6 rounded-xl flex items-center justify-center border border-dashed border-slate-200 py-6 text-sm text-slate-400 font-pjs font-normal text-xs leading-4">
+						<div className="mt-6 rounded-xl flex items-center justify-center border border-dashed border-slate-200 py-6 text-slate-400 font-pjs font-normal text-xs leading-4">
 							Your stack is empty.
 						</div>
 					</>

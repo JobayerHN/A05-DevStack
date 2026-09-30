@@ -22,7 +22,15 @@ function App() {
 				<Nav></Nav>
 				<Banner></Banner>
 				<Explore></Explore>
-				<Suspense fallback={<h2>Loading technologies....</h2>}>
+				<Suspense
+					fallback={
+						<div className="container mx-auto px-4 py-8">
+							<h2 className="text-xl font-normal">
+								Loading technologies....
+							</h2>
+						</div>
+					}
+				>
 					<CardCollection
 						technologyPromise={technologyPromise()}
 					></CardCollection>

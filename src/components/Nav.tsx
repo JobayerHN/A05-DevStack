@@ -6,7 +6,7 @@ const Nav = () => {
 			<div className="container flex justify-between m-auto items-center py-7.5">
 				<div className="">
 					<a href="">
-						<img src="/public/logo-text.png" alt="" />
+						<img src="/src/assets/logo-text.png" alt="" />
 					</a>
 				</div>
 				<ul className="flex gap-7 roboto f-regular">

@@ -1,4 +1,3 @@
-import React from "react";
 import { IoStarSharp } from "react-icons/io5";
 import type { Itechnology } from "../../types/types";
 
