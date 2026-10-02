@@ -11,7 +11,7 @@ const AllTechs = ({ tech, onAddToStack, isSelected }: AllTechProps) => {
 	return (
 		<div className="container">
 			<div
-				className={`rounded-2xl border border-slate-100 ${isSelected && "shadow-pink-400"} bg-white p-6 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow`}
+				className={`rounded-2xl border border-slate-100 ${isSelected && "shadow-pink-600"} bg-white p-6 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-md transition-shadow`}
 			>
 				<div className="pb-3.5">
 					<figure className="flex justify-between items-start pb-3">

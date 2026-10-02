@@ -1,4 +1,4 @@
-// import React from "react";
+import bannerImg from "../assets/banner-stack.png";
 
 const Banner = () => {
 	return (
@@ -26,7 +26,7 @@ const Banner = () => {
 					</div>
 				</div>
 				<div>
-					<img src="/src/assets/banner-stack.png" alt="" />
+					<img src={bannerImg} alt="Banner Stack" />
 				</div>
 			</div>
 		</div>

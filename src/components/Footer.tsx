@@ -1,4 +1,4 @@
-// import React from 'react';
+import logoImg from "../assets/logo-text.png";
 
 const Footer = () => {
 	return (
@@ -8,7 +8,7 @@ const Footer = () => {
 					<div className="flex flex-col gap-3">
 						<div>
 							<a href="">
-								<img src="/src/assets/logo-text.png" alt="" />
+								<img src={logoImg} alt="Logo" />
 							</a>
 						</div>
 
