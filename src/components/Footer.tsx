@@ -3,7 +3,7 @@ import logoImg from "../assets/logo-text.png";
 const Footer = () => {
 	return (
 		<div className="w-full overflow-hidden">
-			<div className="container m-auto pt-8 md:pt-16 lg:pt-16 pb-8 md:pb-12 lg:pb-12">
+			<div className="container m-auto pt-8 md:pt-16 lg:pt-16 pb-8 md:pb-12">
 				<div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 pb-16 text-center lg:text-left">
 					<div className="flex flex-col items-center lg:items-start gap-4 max-w-xs">
 						<div>

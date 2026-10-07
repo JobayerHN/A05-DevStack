@@ -47,7 +47,7 @@ const CardCollection = ({ technologyPromise }: ICardCollectionProps) => {
 						></AllTechs>
 					))}
 				</div>
-				<div className="w-full md:w-80 lg:w-150">
+				<div className="w-full lg:w-150">
 					<SelectedStack
 						selectedStack={selectedStack}
 						onRemoveFromStack={handleRemoveFromStack}

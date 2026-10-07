@@ -2,7 +2,7 @@ import bannerImg from "../assets/banner-stack.png";
 
 const Banner = () => {
 	return (
-		<div className="pt-8 lg:pt-35 px-4">
+		<div className="pt-8 md:pb-16 lg:pt-35 px-4">
 			<div className="container m-auto flex flex-col justify-center md:flex-row md:justify-between lg:flex-row lg:justify-between items-center">
 				<div className="text-center lg:text-left">
 					<h1 className="pb-3 md:pb-6 lg:pb-6 inter font-extrabold text-center md:text-left lg:text-left text-3xl md:text-6xl lg:text-6xl max-w-70 mx-auto md:mx-0 md:max-w-140	lg:max-w-140">
