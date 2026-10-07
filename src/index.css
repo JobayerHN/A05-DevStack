@@ -15,3 +15,14 @@
 .font-pjs {
 	font-optical-sizing: auto;
 }
+
+.menu-btn {
+	anchor-name: --mobile-menu-anchor;
+}
+
+.mobile-popover {
+	position-anchor: --mobile-menu-anchor;
+	top: anchor(bottom);
+	right: anchor(right);
+	margin-top: 8px;
+}

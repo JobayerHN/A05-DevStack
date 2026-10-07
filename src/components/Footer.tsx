@@ -2,28 +2,44 @@ import logoImg from "../assets/logo-text.png";
 
 const Footer = () => {
 	return (
-		<div>
-			<div className="container m-auto pt-16 pb-12">
-				<div className="flex gap-30 pb-22.5">
-					<div className="flex flex-col gap-3">
+		<div className="w-full overflow-hidden">
+			<div className="container m-auto pt-8 md:pt-16 lg:pt-16 pb-8 md:pb-12 lg:pb-12">
+				<div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 pb-16 text-center lg:text-left">
+					<div className="flex flex-col items-center lg:items-start gap-4 max-w-xs">
 						<div>
 							<a href="">
-								<img src={logoImg} alt="Logo" />
+								<img
+									src={logoImg}
+									alt="Logo"
+									className="mx-auto lg:mx-0"
+								/>
 							</a>
 						</div>
 
-						<p className="font-pjs font-normal text-xs text-[#64748B] leading-5 max-w-94.5">
+						<p className="font-pjs font-normal text-xs text-[#64748B] leading-5 max-w-sm mx-auto lg:mx-0 lg:max-w-94.5">
 							Curated tools, technologies, and resources for
 							developers building modern software.
 						</p>
-						<div className="social flex gap-4 font-pjs font-semibold text-xs text-[#475569] leading-4">
-							<a href="">GitHub</a>
-							<a href="">Twitter</a>
-							<a href="">LinkedIn</a>
-						</div>
+						<ul className="social flex gap-4 font-pjs font-semibold text-xs text-[#475569] leading-4 text-center">
+							<li>
+								<a href="">GitHub</a>
+							</li>
+							<span className="text-gray-400 md:hidden lg:hidden">
+								•
+							</span>
+							<li>
+								<a href="">Twitter</a>
+							</li>
+							<span className="text-gray-400 md:hidden lg:hidden">
+								•
+							</span>
+							<li>
+								<a href="">LinkedIn</a>
+							</li>
+						</ul>
 					</div>
 
-					<div className="flex gap-46">
+					<div className="hidden lg:flex gap-16 xl:gap-28">
 						<div>
 							<p className="text-[#0F172A] font-pjs text-xs font-bold leading-4 tracking-[0.6px pb-4">
 								PRODUCT
@@ -111,7 +127,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-between">
+				<div className="flex justify-between px-5 md:px-0 lg:px-0">
 					<p className="font-pjs font-normal text-xs text-[#94A3B8] leading-4">
 						© 2026 Dev Stack. All rights reserved.
 					</p>

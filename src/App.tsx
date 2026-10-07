@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import Explore from "./components/Explore";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+
 import type { Itechnology } from "./types/types";
 import CardCollection from "./components/CardCollection";
 import { ToastContainer } from "react-toastify";
